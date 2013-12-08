@@ -2,13 +2,13 @@
 from setuptools import setup
 
 setup(
-    name='sigpadpy',
+    name='signapadpy',
     version='0.0.1',
     author='Kevin Wetzels',
     author_email='kevin@roam.be',
-    url='https://github.com/roam/sigdpadpy',
+    url='https://github.com/roam/signapadpy',
     install_requires=['Pillow>=1.7'],
-    packages=['sigpadpy'],
+    packages=['signapadpy'],
     license='BSD',
     description='Turn output from Signature Pad into images',
     long_description=open('README.rst').read(),
