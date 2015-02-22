@@ -92,10 +92,12 @@ def proportional_resize(current_size, desired_size):
     a size of (500, 80).
 
     """
-    width_ratio = desired_size[0] / current_size[0]
-    height_ratio = desired_size[1] / current_size[1]
+    width, height = current_size
+    width, height = max(width, 1), max(height, 1)
+    width_ratio = desired_size[0] / width
+    height_ratio = desired_size[1] / height
     ratio = min(width_ratio, height_ratio)
-    width, height = current_size[0] * ratio, current_size[1] * ratio
+    width, height = width * ratio, height * ratio
     return (int(floor(width)), int(floor(height)))
 
 

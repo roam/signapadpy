@@ -3,7 +3,7 @@ from setuptools import setup
 
 setup(
     name='signapadpy',
-    version='0.0.1',
+    version='0.0.2',
     author='Kevin Wetzels',
     author_email='kevin@roam.be',
     url='https://github.com/roam/signapadpy',
